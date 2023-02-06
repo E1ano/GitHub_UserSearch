@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Devfinder</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="adaptive.css">
+</head>
+<body>
+   <div class="header">
+       <div class="container">
+           <div class="header__inner">
+               <div class="header__title">devfinder</div>
+               <div class="header__theme">dark</div>
+           </div>
+       </div>
+   </div>
+
+   <div class="search__wrapper">
+       <div class="container">
+           <form id="form" action="#">
+               <div class="search__icon"></div>
+               <input id ="form-input" type="text" name="username" placeholder="Search GitHub username..." required>
+               <button class="search__button" type="submit">Search</button>
+           </form>
+       </div>
+   </div>
+
+   <div class="user__page">
+       <div class="container">
+           <div class="user__inner">
+               <div class="user__image"><img id = "profile-img" src="images/user-image.png" alt="user-image"></div>
+               <div class="user__data data">
+                    <div class="data__top top">
+                        <div class="top__main">
+                            <div class="top__left">
+                                <div class="top__title">The Octocat</div>
+                                <div class="top__nickname">@octocat</div>
+                            </div>
+                            <div class="top__joined">Joined 25 Jan 2011</div>
+                        </div>
+                        <div class="top__bio">This profile has no bio</div>
+                    </div>
+
+                   <div class="data__bottom bottom">
+                       <div class="bottom__statistics statistics">
+                           <div class="statistics__names names">
+                               <div class="names__item">Repos</div>
+                               <div class="names__item">Followers</div>
+                               <div class="names__item">Following</div>
+                           </div>
+                           <div class="statistics__values values">
+                               <div class="values__item values__item--repos">8</div>
+                               <div class="values__item values__item--followers">3938</div>
+                               <div class="values__item values__item--following">9</div>
+                           </div>
+                       </div>
+
+                       <div class="bottom__add-info add-info">
+                           <div class="add-info__location">
+                               <div class="add-info__icon1"></div>
+                               <div class="add-info__text">San Francisco</div>
+                           </div>
+                           <div class="add-info__twitter">
+                               <div class="add-info__icon2"></div>
+                               <div class="add-info__text">Not Available</div>
+                           </div>
+                           <div class="add-info__website">
+                               <div class="add-info__icon3"></div>
+                               <a class="add-info__text" id="blog" href="#">https://github.blog</a></div>
+                           <div class="add-info__company">
+                               <div class="add-info__icon4"></div>
+                               <div class="add-info__text">@github</div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+<script src="script.js"></script>
+</body>
+</html>

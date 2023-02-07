@@ -213,5 +213,11 @@ window.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         getData();
     });
+
+    if (document.documentElement.clientWidth < 769) {
+        document.getElementById("form-input").placeholder = "Search username...";
+    } else {
+        document.getElementById("form-input").placeholder = "Search GitHub username...";
+    }
 });
 

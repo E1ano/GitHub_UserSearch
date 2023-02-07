@@ -37,7 +37,22 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+    body {
+        padding: 60px 40px;
+    }
+
+    .search__wrapper input {
+        font-size: 16px;
+    }
+
+    .add-info__twitter,
+    .add-info__company {
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
     body {
         padding: 31px 0 79px;
     }

@@ -3,11 +3,102 @@
         max-width: 573px;
     }
 
-    .top__main {
-        flex-direction: column;
+    .user__inner {
+        display: block;
     }
 
-    .top__nickname {
-        margin-bottom: 10px;
+    .user__image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .top__main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        border-bottom: 3px solid var(--first-bg);
+        margin-bottom: 20px;
+    }
+
+    .top__joined {
+        text-align: left;
+        width: 100%;
+    }
+
+    .add-info__twitter,
+    .add-info__company {
+        padding-left: 10%;
+    }
+
+    .names__item, .values__item {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 31px 0 79px;
+    }
+
+    .container {
+        max-width: 327px;
+    }
+
+    .user__inner {
+        padding: 32px 24px;
+    }
+
+    .top__title {
+        font-size: 22px;
+    }
+
+    .top__joined, .top__bio {
+        font-size: 14px;
+    }
+
+    .search__wrapper form {
+        padding: 20px 7px 20px 16px;
+    }
+
+    .search__wrapper input {
+        font-size: 14px;
+        width: 50%;
+        padding-left: 10px;
+    }
+
+    .search__button {
+        height: 46px;
+        width: 84px;
+        font-size: 14px;
+    }
+
+    .search__icon {
+        margin-right: 0;
+        padding-right: 15px;
+    }
+
+    .form-message {
+        font-size: 13px;
+        line-height: 18px;
+        padding-left: 2%;
+    }
+
+    .bottom__statistics {
+        padding: 15px 10px;
+    }
+
+    .add-info__location,
+    .add-info__twitter,
+    .add-info__website,
+    .add-info__company {
+        flex: 0 1 100%;
+        font-size: 14px;
+    }
+
+    .add-info__twitter,
+    .add-info__company {
+        padding-left: 0;
     }
 }
